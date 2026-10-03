@@ -11,3 +11,5 @@ Gerçek Gemlik çekimleri gelince değiştirilecek.
 | giris-*.webp  | photo-1757840363532-87f144af7236 |
 | site-gece-*.webp | photo-1669281537270-adf6492bfe22 |
 | bahce-aksam-*.webp | photo-1764772145422-f7593e346a1a |
+| acilis-dikey-*.webp | photo-1571440727633-ca6b05da2008 |
+| teras-*.webp | photo-1765438630215-f3ab1acf5990 |
