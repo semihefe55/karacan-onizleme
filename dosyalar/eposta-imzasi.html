@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Karacan E-posta İmzası</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* Kopyalama sayfası. İmzaların kendisi (#imza-tam, #imza-kisa) yalnız satır içi stil kullanır;
+     Gmail <style> etiketlerini siler. Resimler karacanyonetim.com.tr/img/eposta/ adresinden gelir (uret.py). */
+  :root { --krem: #F6F2E9; --altin: #A8874A; --altin-acik: #C9A96B; --yazi: #1A1A1A; --soluk: #6B665C; --cizgi: #E4DCCB; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--krem); color: var(--yazi); font-family: Inter, -apple-system, sans-serif; font-size: 16px; line-height: 1.6; }
+  .kap { max-width: 760px; margin: 0 auto; padding: 56px 16px 80px; }
+  .etiket { font-size: 11px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: var(--altin); }
+  h1 { font-family: "Playfair Display"; font-weight: 500; font-size: clamp(2rem, 1.5rem + 2vw, 2.8rem); line-height: 1.15; margin-top: 14px; }
+  .giris { margin-top: 14px; color: var(--soluk); max-width: 56ch; }
+  .kisa-cizgi { width: 40px; height: 1px; background: var(--altin-acik); margin: 28px 0 0; }
+  section { margin-top: 48px; }
+  h2 { font-family: "Playfair Display"; font-weight: 500; font-size: 1.5rem; }
+  .aciklama { margin-top: 6px; color: var(--soluk); font-size: 15px; }
+  .ornek { margin-top: 20px; background: #fff; border: 1px solid var(--cizgi); padding: 36px 28px; overflow-x: auto; }
+  .ornek .sahte { color: #8a857b; font-size: 14px; margin-bottom: 26px; font-family: Arial, sans-serif; }
+  button { margin-top: 18px; font: inherit; font-size: 12px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+           background: var(--yazi); color: #fff; border: 0; padding: 15px 26px; cursor: pointer; }
+  button:hover { background: #000; }
+  button.tamam { background: var(--altin); }
+  ol { margin-top: 18px; padding-left: 0; list-style: none; counter-reset: s; border-top: 1px solid var(--cizgi); }
+  ol li { counter-increment: s; display: grid; grid-template-columns: 44px 1fr; padding: 14px 0; border-bottom: 1px solid var(--cizgi); font-size: 15.5px; }
+  ol li::before { content: counter(s, decimal-leading-zero); font-family: "Playfair Display"; color: var(--altin); font-size: 1.1rem; line-height: 1.5; }
+  b { font-weight: 600; }
+  pre { margin-top: 16px; background: #fff; border: 1px solid var(--cizgi); padding: 18px 20px; font: 14px/1.7 Inter, sans-serif; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<main class="kap">
+  <p class="etiket">Karacan Yönetim</p>
+  <h1>E-posta imzası</h1>
+  <p class="giris">Kartvizitle aynı düzende hazırlandı. Düğmeye basıp Gmail'in imza alanına yapıştırmanız yeterli; logo ve simgeler kendiliğinden gelir.</p>
+  <div class="kisa-cizgi"></div>
+
+  <section>
+    <h2>Yeni e-postalar için</h2>
+    <p class="aciklama">Yeni yazdığınız ve ilettiğiniz e-postaların altında görünür.</p>
+    <div class="ornek">
+      <p class="sahte">Saygılarımızla,</p>
+      <div id="imza-tam"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#1A1A1A;"><tr><td style="vertical-align:middle;padding:0 22px 0 0;"><div style="font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:20px;letter-spacing:2px;color:#161513;white-space:nowrap;">MUTLU KARACAN</div><div style="font-family:Arial,Helvetica,sans-serif;font-size:9.5px;line-height:12px;letter-spacing:2.6px;color:#A8874A;padding-top:5px;white-space:nowrap;">KARACAN YÖNETİM</div><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:14px;"><tr><td style="padding:1px 10px 7px 0;vertical-align:top;"><img src="https://karacanyonetim.com.tr/img/eposta/ikon-telefon.png" width="14" height="14" alt="Tel" style="display:block;border:0;"></td><td style="padding:0 0 7px 0;font-family:Arial,Helvetica,sans-serif;font-size:12.5px;line-height:16px;color:#3A3833;white-space:nowrap;"><a href="tel:+905366007800" style="color:#3A3833;text-decoration:none;">0536 600 78 00</a><br><a href="tel:+905342634718" style="color:#3A3833;text-decoration:none;">0534 263 47 18</a></td></tr><tr><td style="padding:1px 10px 7px 0;vertical-align:top;"><img src="https://karacanyonetim.com.tr/img/eposta/ikon-eposta.png" width="14" height="14" alt="E-posta" style="display:block;border:0;"></td><td style="padding:0 0 7px 0;font-family:Arial,Helvetica,sans-serif;font-size:12.5px;line-height:16px;color:#3A3833;white-space:nowrap;"><a href="mailto:info@karacanyonetim.com.tr" style="color:#3A3833;text-decoration:none;">info@karacanyonetim.com.tr</a></td></tr><tr><td style="padding:1px 10px 7px 0;vertical-align:top;"><img src="https://karacanyonetim.com.tr/img/eposta/ikon-web.png" width="14" height="14" alt="Web" style="display:block;border:0;"></td><td style="padding:0 0 7px 0;font-family:Arial,Helvetica,sans-serif;font-size:12.5px;line-height:16px;color:#3A3833;white-space:nowrap;"><a href="https://karacanyonetim.com.tr" style="color:#3A3833;text-decoration:none;">www.karacanyonetim.com.tr</a></td></tr><tr><td style="padding:1px 10px 7px 0;vertical-align:top;"><img src="https://karacanyonetim.com.tr/img/eposta/ikon-instagram.png" width="14" height="14" alt="Instagram" style="display:block;border:0;"></td><td style="padding:0 0 7px 0;font-family:Arial,Helvetica,sans-serif;font-size:12.5px;line-height:16px;color:#3A3833;white-space:nowrap;"><a href="https://www.instagram.com/karacansiteyonetimi/" style="color:#3A3833;text-decoration:none;">karacansiteyonetimi</a></td></tr><tr><td style="padding:1px 10px 0 0;vertical-align:top;"><img src="https://karacanyonetim.com.tr/img/eposta/ikon-konum.png" width="14" height="14" alt="Adres" style="display:block;border:0;"></td><td style="padding:0;font-family:Arial,Helvetica,sans-serif;font-size:12.5px;line-height:16px;color:#3A3833;white-space:nowrap;">Hamidiye Mah. Kuvayi Milliye Blv.<br>No: 232/7, Gemlik / Bursa</td></tr></table></td><td style="width:1px;padding:0;background-color:#D7C193;font-size:0;line-height:0;">&nbsp;</td><td style="vertical-align:middle;padding:0 0 0 22px;"><a href="https://karacanyonetim.com.tr" style="text-decoration:none;"><img src="https://karacanyonetim.com.tr/img/eposta/karacan-imza-logo.png" width="140" height="162" alt="Karacan Yönetim · Güvenli Yaşam, Değerli Mekanlar" style="display:block;border:0;"></a></td></tr></table></div>
+    </div>
+    <button type="button" data-kopyala="imza-tam">İmzayı kopyala</button>
+  </section>
+
+  <section>
+    <h2>Yanıtlar için kısa imza</h2>
+    <p class="aciklama">Yazışma uzadıkça her yanıtta büyük imza tekrar etmesin diye.</p>
+    <div class="ornek">
+      <p class="sahte">Teşekkürler, iyi çalışmalar.</p>
+      <div id="imza-kisa"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td style="padding:0;"><div style="font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;letter-spacing:1.6px;color:#161513;">MUTLU KARACAN</div><div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:17px;color:#6B665C;padding-top:4px;"><span style="color:#A8874A;letter-spacing:1.8px;font-size:9.5px;">KARACAN YÖNETİM</span>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="tel:+905366007800" style="color:#6B665C;text-decoration:none;">0536 600 78 00</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://karacanyonetim.com.tr" style="color:#6B665C;text-decoration:none;">karacanyonetim.com.tr</a></div></td></tr></table></div>
+    </div>
+    <button type="button" data-kopyala="imza-kisa">Kısa imzayı kopyala</button>
+  </section>
+
+  <section>
+    <h2>Gmail'e ekleme</h2>
+    <p class="aciklama">Bilgisayardan, bir kez yapılır. info@karacanyonetim.com.tr hesabıyla Gmail açıkken:</p>
+    <ol>
+      <li><span>Sağ üstteki <b>çark</b> simgesi → <b>Tüm ayarları görüntüle</b>.</span></li>
+      <li><span><b>Genel</b> sekmesinde aşağı inip <b>İmza</b> bölümünde <b>+ Yeni oluştur</b>. Adı: <b>Karacan</b>.</span></li>
+      <li><span>Bu sayfada <b>İmzayı kopyala</b>'ya basın, imza kutusuna tıklayıp yapıştırın (<b>⌘ + V</b> ya da <b>Ctrl + V</b>).</span></li>
+      <li><span>Aynı şekilde <b>Karacan kısa</b> adıyla ikinci imzayı oluşturup kısa imzayı yapıştırın.</span></li>
+      <li><span><b>İmza varsayılanları</b>: Yeni e-postalar için <b>Karacan</b>, yanıtlar ve iletmeler için <b>Karacan kısa</b>.</span></li>
+      <li><span>Sayfanın en altında <b>Değişiklikleri kaydet</b>. Kendinize bir deneme e-postası gönderip bakın.</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Telefondaki Gmail uygulaması için</h2>
+    <p class="aciklama">Uygulama yalnız düz yazı imza kabul eder (Ayarlar → hesap → Mobil imza). Bilgisayarda kurulan imza telefondan gönderilenlerde de görünür; mobil imzayı yalnız bilgisayar imzası kapalıysa kullanın.</p>
+    <pre id="imza-duz">Mutlu Karacan
+Karacan Yönetim
+0536 600 78 00 · 0534 263 47 18
+info@karacanyonetim.com.tr
+www.karacanyonetim.com.tr</pre>
+    <button type="button" data-kopyala="imza-duz" data-duz>Düz yazıyı kopyala</button>
+  </section>
+</main>
+
+<script>
+  document.querySelectorAll('[data-kopyala]').forEach((dugme) => {
+    const ilkMetin = dugme.textContent;
+    dugme.addEventListener('click', async () => {
+      const kaynak = document.getElementById(dugme.dataset.kopyala);
+      const duz = kaynak.innerText.trim();
+      try {
+        if (dugme.hasAttribute('data-duz')) await navigator.clipboard.writeText(duz);
+        else await navigator.clipboard.write([new ClipboardItem({
+          'text/html': new Blob([kaynak.innerHTML], { type: 'text/html' }),
+          'text/plain': new Blob([duz], { type: 'text/plain' }),
+        })]);
+      } catch {
+        // Eski tarayıcılar: seçip kopyala
+        const aralik = document.createRange(); aralik.selectNodeContents(kaynak);
+        const secim = getSelection(); secim.removeAllRanges(); secim.addRange(aralik);
+        document.execCommand('copy'); secim.removeAllRanges();
+      }
+      dugme.textContent = 'Kopyalandı'; dugme.classList.add('tamam');
+      setTimeout(() => { dugme.textContent = ilkMetin; dugme.classList.remove('tamam'); }, 2200);
+    });
+  });
+</script>
+</body>
+</html>
